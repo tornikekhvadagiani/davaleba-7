@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
+.whitecar {
+  left: 0;
+  top: 100px;
+  position:absolute;
+  background-size: cover;
+  animation-name: moveWhiteCar;
+  animation-duration: 4s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  
+}
+.redcar{ 
+  right: 0;
+  top: 100px;
+  position: absolute;
+  background-size: cover;
+  animation-name: moveRedCar;
+  animation-duration: 4s;
+  animation-delay: 0.3s;
+  animation-iteration-count: infinite;
+  
+
+}
+@keyframes moveWhiteCar{
+  form{
+      left: 0px;
+
+  }
+  to{
+      left:30%;
+  }
+}
+@keyframes moveRedCar{
+  form{
+      right: 0;
+     
+  }
+  to{
+      right: 30%;
+
+  }
+}
